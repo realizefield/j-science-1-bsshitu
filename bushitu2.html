@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第2講 物質の状態変化と蒸留 | GAMBA中学理科</title>
+<link rel="stylesheet" href="app.css">
+<style>
+.lesson-fig{margin:14px 0;text-align:center;}
+.lesson-fig img{max-width:100%;border-radius:10px;border:1.5px solid #FFE0B2;background:#fff;}
+.lesson-fig-cap{font-size:12.5px;color:#5D4037;margin-top:6px;}
+.info-note{background:#F0F9FF;border-left:4px solid #0284C7;border-radius:0 8px 8px 0;padding:12px 15px;margin:12px 0;font-size:14px;line-height:1.8;color:#0C4A6E;}
+.info-note .label{font-weight:bold;color:#0284C7;display:block;margin-bottom:4px;}
+
+/* チャレンジ開始後の空欄(未回答)を淡い緑色にして、どこが空欄かひと目でわかるようにする */
+.blank-slot{background:#E3F6E5;border:2px dashed #4CAF50;}
+.blank-slot:empty::before{color:#7BAE7F;}
+</style>
+</head>
+<body data-page="bushitu2">
+
+<nav class="topnav">
+  <span class="brand">🧪 GAMBA 中学理科 身のまわりの物質</span>
+  <span class="sep">|</span>
+  <a href="index.html">📊 単元表</a>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="crumb">第2講 / 状態変化と蒸留</div>
+  <h1>物質の状態変化と蒸留 <span class="stars">★★☆</span></h1>
+  <p class="sub">物質は温度によって固体・液体・気体とすがたを変えます。この「状態変化」のしくみと、状態変化を利用して混合物を分ける「蒸留」について、江原予備校テキストにそって学んでいきましょう。</p>
+</header>
+
+<main>
+
+<!-- ================================================== -->
+<!--  単元1:物質の三態と状態変化の名前                  -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">1</span>物質の三態と状態変化の名前</div>
+
+  <div class="stage">
+    <div class="stage-head"><span class="stage-label read">📖 説明</span></div>
+    <div class="read-box">
+      <p>温度によって、物質が固体・液体・気体に変化することを<strong>状態変化</strong>といいます。</p>
+
+      <div class="lesson-fig">
+        <img src="bushitusantai.png" alt="物質の三態(固体・液体・気体の分子のようす)">
+      </div>
+
+      <p>固体は、分子どうしが分子間力によって規則正しく並んで固定しています。熱によりエネルギーが増すと、分子間力を振り切って振動を始め(液体)、さらに熱エネルギーを得ると分子どうしがぶつかり合って分散していきます(気体)。<strong>加熱すると分子が離れていき、冷却すると分子どうしがひきつけ合います。</strong></p>
+
+      <div class="lesson-fig">
+        <img src="santai.png" alt="状態変化の名前(昇華・気化・液化・融解・凝固)">
+      </div>
+
+      <p>固体→液体の変化を<strong>融解</strong>、液体→固体の変化を<strong>凝固</strong>といいます。液体→気体の変化を<strong>気化</strong>(蒸発)、気体→液体の変化を<strong>液化</strong>(凝縮)といいます。そして、固体と気体が液体にならずに直接入れかわる変化を<strong>昇華</strong>といいます。</p>
+
+      <p>昇華の例としては、ドライアイスがあります。ドライアイスは<strong>二酸化炭素</strong>でできていて、固体のまま空気中に置いておくと、<strong>液体にならずに直接気体になって</strong>消えていきます。</p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>融解(固体→液体)／凝固(液体→固体)</li>
+        <li>気化(液体→気体)／液化(気体→液体)</li>
+        <li>昇華……固体⇄気体の変化。液体にならない(例:ドライアイス=二酸化炭素)</li>
+        <li>固体→液体→気体の向き=加熱／その逆向き=冷却</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stage challenge" data-ch-id="bu2-u1" data-target="#bu2-u1-quizbox">
+    <div class="stage-head">
+      <span class="stage-label minitest">✏️ ミニテスト ― 図の①〜⑥にあてはまる変化の名前を答えよう</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="bu2-u1-quizbox">
+      <div class="lesson-fig">
+        <img src="santaitoi.png" alt="固体・液体・気体の変化を表した図(①〜⑥)">
+      </div>
+      <p>図の③(固体→液体)の変化を<span class="kw-blank" data-a="融解">融解</span>という。図の④(液体→固体)の変化を<span class="kw-blank" data-a="凝固">凝固</span>という。図の⑤(液体→気体)の変化を<span class="kw-blank" data-a="気化">気化</span>という。図の⑥(気体→液体)の変化を<span class="kw-blank" data-a="液化">液化</span>という。図の①・②のように、固体と気体が液体を通らずに直接入れかわる変化を<span class="kw-blank" data-a="昇華">昇華</span>という。</p>
+      <p>図の③・⑤のように分子が離れていく向きの変化は<span class="kw-blank" data-a="加熱">加熱</span>によって、図の④・⑥のように分子どうしがひきつけ合う向きの変化は<span class="kw-blank" data-a="冷却">冷却</span>によって起こる。</p>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全1問)</div>
+
+    <div class="q4" data-correct="a">
+      <div class="q4-stem"><span class="q4-num">問1</span>ドライアイスを空気中に置いておくと、だんだん小さくなって消えていった。図のどの変化と同じ種類か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:①(固体→気体)</button>
+        <button class="q4-c" data-v="b">イ:③(固体→液体)</button>
+        <button class="q4-c" data-v="c">ウ:⑤(液体→気体)</button>
+        <button class="q4-c" data-v="d">エ:⑥(気体→液体)</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ア</strong>。ドライアイス(固体の二酸化炭素)は、液体にならずに直接気体になる昇華という変化をします。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-bu2-u1" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('bu2-u1')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元2:状態変化と体積(液体の凝固)                  -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">2</span>状態変化と体積(液体の凝固)</div>
+
+  <div class="stage">
+    <div class="stage-head"><span class="stage-label read">📖 説明</span></div>
+    <div class="read-box">
+      <p>一般に、液体から固体になる(凝固する)とき、体積は<strong>減ります</strong>。ろうそくのろうがとけて固まると、真ん中がへこむのはこのためです。</p>
+
+      <div class="lesson-fig">
+        <img src="koorinobouchou.png" alt="液体の凝固による体積変化(ろうと水の比較)">
+        <div class="lesson-fig-cap">ろうは固まると体積が減りへこむが、水は固まる(凍る)と体積が増える。</div>
+      </div>
+
+      <p>しかし、<strong>水は例外です。</strong>水が液体から固体(氷)に変化するとき、体積はむしろ<strong>増えます</strong>。ペットボトルに入れた水を凍らせるとふくらんでしまうのは、このためです。</p>
+
+      <div class="lesson-fig">
+        <img src="mizunogyoko2.png" alt="水が氷になると体積が増える理由(分子モデル)">
+        <div class="lesson-fig-cap">液体の水は分子がすき間少なく集まっているが、氷になると分子が規則正しく並び、すき間が大きくなる。</div>
+      </div>
+
+      <p>氷になると、水分子が規則正しい形に並び、<strong>分子どうしのすき間が大きくなります。</strong>状態変化では質量は変わらないので、体積だけが大きくなった氷は、水より<strong>密度が小さくなります。</strong>そのため、<strong>氷は水に浮くのです。</strong></p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>ふつう、液体→固体(凝固)で体積は減る</li>
+        <li>水は例外:液体→固体(氷)になると体積が増える</li>
+        <li>質量は変化しないので、体積が増えた分だけ密度は小さくなる → 氷は水に浮く</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stage challenge" data-ch-id="bu2-u2" data-target="#bu2-u2-quizbox">
+    <div class="stage-head">
+      <span class="stage-label minitest">✏️ ミニテスト ― 重要語句を答えよう</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="bu2-u2-quizbox">
+      <p>一般に、液体から固体になるとき、体積は<span class="kw-blank" data-a="減り">減り</span>ます。しかし水は例外で、液体から固体(氷)になるとき、体積は<span class="kw-blank" data-a="増え">増え</span>ます。</p>
+      <p>氷になると、水分子が規則正しい形に並び、分子どうしのすき間が<span class="kw-blank" data-a="大きく">大きく</span>なります。状態変化では質量は変わらないので、体積だけが大きくなった氷は、水より<span class="kw-blank" data-a="密度">密度</span>が小さくなります。そのため、氷は水に<span class="kw-blank" data-a="浮き">浮き</span>ます。</p>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全4問)</div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問1</span>一般に、液体から固体になる場合、体積はどうなるか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:増える</button>
+        <button class="q4-c" data-v="b">イ:減る</button>
+        <button class="q4-c" data-v="c">ウ:変わらない</button>
+        <button class="q4-c" data-v="d">エ:0になる</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ:減る</strong>。ろうのように、多くの物質は液体→固体で体積が減ります。</div>
+    </div>
+
+    <div class="q4" data-correct="a">
+      <div class="q4-stem"><span class="q4-num">問2</span>水は、液体から固体に変化するとき、体積はどうなるか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:増える</button>
+        <button class="q4-c" data-v="b">イ:減る</button>
+        <button class="q4-c" data-v="c">ウ:変わらない</button>
+        <button class="q4-c" data-v="d">エ:0になる</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ア:増える</strong>。水は例外的に、氷になると体積が増えます。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問3</span>質量300gの水をすべて凍らせて氷にした。氷の質量はいくらか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:300gより小さい</button>
+        <button class="q4-c" data-v="b">イ:ちょうど300g</button>
+        <button class="q4-c" data-v="c">ウ:300gより大きい</button>
+        <button class="q4-c" data-v="d">エ:0g</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。状態変化しても質量は変わりません。変わるのは体積です。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問4</span>氷が水に浮く理由として正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:氷は水より密度が大きいから</button>
+        <button class="q4-c" data-v="b">イ:氷は水より密度が小さいから</button>
+        <button class="q4-c" data-v="c">ウ:氷は水より質量が大きいから</button>
+        <button class="q4-c" data-v="d">エ:氷はとけない物質だから</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。氷は水より体積が大きく質量は同じなので、密度が小さくなります。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-bu2-u2" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('bu2-u2')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元3:氷を加熱するときの温度変化(融点・沸点)      -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">3</span>氷を加熱するときの温度変化(融点・沸点)</div>
+
+  <div class="stage">
+    <div class="stage-head"><span class="stage-label read">📖 説明</span></div>
+    <div class="read-box">
+      <p>下の図は、氷を入れて加熱するときの加熱時間と温度変化を表した図です。</p>
+
+      <div class="lesson-fig">
+        <img src="iceno3tai.png" alt="氷を加熱するときの温度変化(A〜E)">
+      </div>
+
+      <p>A区間はすべて固体の状態、Bは固体と液体が混ざった状態、C区間はすべて液体の状態、Dは液体と気体が混ざった状態、E区間はすべて気体の状態です。</p>
+
+      <p>固体から液体になるときの温度を<strong>融点</strong>、液体から気体になるときの温度を<strong>沸点</strong>といいます。水の場合、<strong>融点は0℃、沸点は100℃</strong>です。水の気体を水蒸気といいます。</p>
+
+      <div class="info-note">
+        <span class="label">💡 なぜB・Dの区間は温度が一定になるの?</span>
+        Bの区間で温度が変わらないのは、<strong>固体から液体になるのに熱が必要だから</strong>です。Dの区間で温度が変わらないのも同じ理由で、<strong>液体から気体になるのに熱が必要だから</strong>です。加えた熱は温度を上げるためではなく、<strong>状態を変えるために使われている</strong>のです。
+      </div>
+
+      <p style="font-size:13px;color:#5D4037;">※沸とう中にできる「あわ」の正体は水蒸気です。一部の水分子が活発になり、他の水分子をおしのけて空間ができたものが、あわとなって出てきます。</p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>融点……固体から液体になるときの温度</li>
+        <li>沸点……液体から気体になるときの温度</li>
+        <li>水の融点は0℃、沸点は100℃</li>
+        <li>状態変化している間(平らな区間)は、加熱しても温度は変わらない</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stage challenge" data-ch-id="bu2-u3" data-target="#bu2-u3-quizbox">
+    <div class="stage-head">
+      <span class="stage-label minitest">✏️ ミニテスト ― 図の①〜⑦にあてはまる語句を答えよう</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="bu2-u3-quizbox">
+      <div class="lesson-fig">
+        <img src="iceno3tai2.png" alt="氷を加熱するときの温度変化(①〜⑦)">
+      </div>
+      <p>Aの区間はすべて①<span class="kw-blank" data-a="固体">固体</span>の状態である。Bの区間は②<span class="kw-blank" data-a="固体">固体</span>と③<span class="kw-blank" data-a="液体">液体</span>が混ざった状態である。Cの区間はすべて④<span class="kw-blank" data-a="液体">液体</span>の状態である。Dの区間は⑤<span class="kw-blank" data-a="液体">液体</span>と⑥<span class="kw-blank" data-a="気体">気体</span>が混ざった状態である。Eの区間はすべて⑦<span class="kw-blank" data-a="気体">気体</span>の状態である。</p>
+      <p>固体から液体になるときの温度を<span class="kw-blank" data-a="融点">融点</span>という。液体から気体になるときの温度を<span class="kw-blank" data-a="沸点">沸点</span>という。</p>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全4問)</div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問1</span>図のBの区間(②・③)は、どのような状態か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:固体のみ</button>
+        <button class="q4-c" data-v="b">イ:固体と液体が混ざった状態</button>
+        <button class="q4-c" data-v="c">ウ:液体のみ</button>
+        <button class="q4-c" data-v="d">エ:液体と気体が混ざった状態</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。Bの区間は固体から液体へ変わっている途中です。</div>
+    </div>
+
+    <div class="q4" data-correct="d">
+      <div class="q4-stem"><span class="q4-num">問2</span>図のDの区間(⑤・⑥)は、どのような状態か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:固体のみ</button>
+        <button class="q4-c" data-v="b">イ:固体と液体が混ざった状態</button>
+        <button class="q4-c" data-v="c">ウ:液体のみ</button>
+        <button class="q4-c" data-v="d">エ:液体と気体が混ざった状態</button>
+      </div>
+      <div class="q4-exp">正解は<strong>エ</strong>。Dの区間は液体から気体へ変わっている途中です。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問3</span>水の融点・沸点の組み合わせとして正しいものはどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:融点100℃、沸点0℃</button>
+        <button class="q4-c" data-v="b">イ:融点0℃、沸点78℃</button>
+        <button class="q4-c" data-v="c">ウ:融点0℃、沸点100℃</button>
+        <button class="q4-c" data-v="d">エ:融点-115℃、沸点0℃</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。水の融点は0℃、沸点は100℃です。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問4</span>Bの区間で、熱を加えても温度が一定の時間があるのはどうしてか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:液体から気体になるのに熱が必要だから</button>
+        <button class="q4-c" data-v="b">イ:固体から液体になるのに熱が必要だから</button>
+        <button class="q4-c" data-v="c">ウ:固体の部分が多いとこのようになる</button>
+        <button class="q4-c" data-v="d">エ:融点と沸点の差が大きいから</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。固体から液体になるのに熱が必要なため、その間は温度が上がりません。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-bu2-u3" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('bu2-u3')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元4:状態変化と温度(純粋な物質と混合物)          -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">4</span>状態変化と温度(純粋な物質と混合物)</div>
+
+  <div class="stage">
+    <div class="stage-head"><span class="stage-label read">📖 説明</span></div>
+    <div class="read-box">
+      <div class="lesson-fig">
+        <img src="santaizu1.png" alt="状態変化と温度のグラフ(図1・図2)">
+        <div class="lesson-fig-cap">図1:ナフタレンとパラジクロロベンゼンを加熱したときのグラフ／図2:水とエタノールの混合物を加熱したときのグラフ</div>
+      </div>
+
+      <p>図1について、固体から液体になるときの温度を<strong>融点</strong>といいます。ナフタレン(融点81℃)とパラジクロロベンゼン(融点54℃)のグラフを見ると、<strong>物質によって融点がちがう</strong>ことがわかります。</p>
+
+      <p>図2について、液体から気体になるときの温度を<strong>沸点</strong>といいます。水とエタノールの混合物を加熱すると、80℃付近で1回、100℃付近でもう1回沸とうし、<strong>沸点が一定になりません。</strong></p>
+
+      <div class="info-note">
+        <span class="label">💡 重要</span>
+        純粋な物質では、融点・沸点は<strong>一定</strong>で変わりません。<strong>混合物</strong>は融点・沸点が一定にはなりません。
+      </div>
+
+      <p>純粋な物質……1種類の物質でできているもの(例:水)<br>混合物……2種類以上の物質が混ざったもの(例:海水、空気)</p>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>融点……固体が液体になるときの温度／沸点……液体が気体になるときの温度</li>
+        <li>純粋な物質は融点・沸点が物質ごとに決まった一定の値になる</li>
+        <li>混合物は融点・沸点が一定にならない(水とエタノールの混合物は2回沸とうする)</li>
+        <li>純粋な物質:1種類の物質(例:水)／混合物:2種類以上が混ざったもの(例:海水、空気)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stage challenge" data-ch-id="bu2-u4" data-target="#bu2-u4-quizbox">
+    <div class="stage-head">
+      <span class="stage-label minitest">✏️ ミニテスト ― 図の①〜④にあてはまる語句を答えよう</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="bu2-u4-quizbox">
+      <div class="lesson-fig">
+        <img src="santaizu2.png" alt="状態変化と温度のグラフ(①〜④)">
+      </div>
+      <p>図1の①にあてはまる語句は<span class="kw-blank" data-a="融点">融点</span>である(固体から液体になるときの温度)。図2の②にあてはまる語句は<span class="kw-blank" data-a="沸点">沸点</span>である(液体から気体になるときの温度)。</p>
+      <p>【重要】純粋な物質では③<span class="kw-blank" data-a="融">融</span>点、④<span class="kw-blank" data-a="沸">沸</span>点は一定で変わらない。混合物は融点・沸点が一定にはならない。</p>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全2問)</div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問1</span>ナフタレンとパラジクロロベンゼンの融点がちがうことから、何がわかるか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:すべての物質の融点は同じ</button>
+        <button class="q4-c" data-v="b">イ:物質によって融点は異なる</button>
+        <button class="q4-c" data-v="c">ウ:混合物には融点がない</button>
+        <button class="q4-c" data-v="d">エ:融点は加熱時間で決まる</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。融点は物質ごとに決まった値になります。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問2</span>水とエタノールの混合物を加熱すると、沸点はどうなるか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:78℃で一定になる</button>
+        <button class="q4-c" data-v="b">イ:100℃で一定になる</button>
+        <button class="q4-c" data-v="c">ウ:80℃付近と100℃付近の2回、沸とうする</button>
+        <button class="q4-c" data-v="d">エ:まったく沸とうしない</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。混合物は決まった沸点をもたないため、2回に分けて沸とうします。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-bu2-u4" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('bu2-u4')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元5:液体の分離「蒸留」                          -->
+<!-- ================================================== -->
+<div class="unit">
+  <div class="unit-title"><span class="num">5</span>液体の分離「蒸留」</div>
+
+  <div class="stage">
+    <div class="stage-head"><span class="stage-label read">📖 説明</span></div>
+    <div class="read-box">
+      <p>混合した液体を気体にし、それをまた液体にもどすことで、<strong>沸点の差を利用して</strong>物質を分離する方法を<strong>蒸留</strong>といいます。</p>
+
+      <div class="lesson-fig">
+        <img src="joryuu1.png" alt="蒸留装置(温度計・枝つきフラスコ・沸とう石・冷たい水)">
+      </div>
+
+      <div class="info-note" style="background:#FFF3E0;border-left:4px solid #FF8C42;">
+        <span class="label" style="color:#E67838;">【重要】蒸留の実験で気をつけること</span>
+        <ul style="margin:6px 0 0;padding-left:20px;line-height:1.9;">
+          <li>①急激な沸とう(<strong>突沸</strong>)を防ぐため、枝つきフラスコの中には<strong>沸騰石</strong>を入れる。</li>
+          <li>②温度計の液だめは、枝つきフラスコの枝の付け根の高さに合わせる。<strong>これは、フラスコから枝を通って出ていく気体(蒸気)の温度を正しく測るため</strong>である。</li>
+          <li>③実験を終えるときは、火を消す前にガラス管を試験管の液体から抜く。これは<strong>逆流</strong>を防ぎ、<strong>フラスコが割れるのを防ぐため</strong>である。</li>
+        </ul>
+      </div>
+
+      <h4>▶ エタノールと水の混合物を蒸留すると</h4>
+
+      <p>水(沸点100℃)とエタノール(沸点78℃)の混合物を加熱すると、<strong>沸点の低いエタノールが先に多く気体になって出てきます。</strong>加熱を始めて4〜6分の間は、少量の水が混ざったエタノールが試験管にたまります。さらに加熱を続けて8〜10分の間は、少量のエタノールが混ざった水が試験管にたまります。</p>
+
+      <div class="lesson-fig">
+        <img src="joryuu2.png" alt="エタノールと水の混合物を蒸留したときの温度変化">
+      </div>
+    </div>
+  </div>
+
+  <div class="stage challenge" data-ch-id="bu2-u5b" data-target="#bu2-u5b-quizbox">
+    <div class="stage-head">
+      <span class="stage-label minitest">✏️ ミニテスト ― 図の①〜⑤にあてはまる語句を答えよう</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="bu2-u5b-quizbox">
+      <div class="lesson-fig">
+        <img src="joryuu2toi.png" alt="エタノールと水の混合物を蒸留したときの温度変化(①〜⑤が空欄)">
+      </div>
+      <p>アの範囲(4〜6分間)は、少量の<span class="kw-blank" data-a="水">水</span>が混ざった<span class="kw-blank" data-a="エタノール">エタノール</span>が試験管にたまります。イの範囲(8〜10分間)は、少量の<span class="kw-blank" data-a="エタノール">エタノール</span>が混ざった<span class="kw-blank" data-a="水">水</span>が試験管にたまります。</p>
+      <p>蒸留は<span class="kw-blank" data-a="沸点">沸点</span>の差を利用して、液体を分離することができます。</p>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-bu2-u5b" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('bu2-u5b')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+
+  <div class="stage">
+    <div class="read-box">
+      <h4>▶ 蒸留の具体例</h4>
+
+      <p>蒸留は、わたしたちのくらしの中でも広く利用されています。日本酒やビールなどの醸造酒を蒸留すると、アルコール分の多い焼酎やウイスキー、ブランデーなどの蒸留酒ができます。また、原油を熱して蒸留すると、沸点のちがいによってガソリン・灯油・軽油などに分けることができます(石油の精製)。</p>
+
+      <p>海水を蒸留すると、塩分をふくまない水(蒸留水)だけを取り出すことができ、水不足の地域や船の上で飲み水をつくるのに利用されています。このほか、草花を水とともに加熱して蒸留し、香りの成分をとり出す香水づくりにも蒸留の技術が使われています。</p>
+
+      <div class="info-note" style="background:#FFF3E0;border-left:4px solid #FF8C42;">
+        <span class="label" style="color:#E67838;">【重要】蒸留されて出てきた液体に食塩が混じっていないかを調べたい。どうすればよいでしょうか。</span>
+        <p style="margin:6px 0 0;">解)<strong>硝酸銀水溶液</strong>を加えます。食塩があれば<strong>塩化銀が沈殿</strong>します(白色の沈殿ができます)。反応しなければ、食塩はふくまれていません。</p>
+      </div>
+    </div>
+
+    <div class="point-box">
+      <span class="label">★ 覚えよう!</span>
+      <ul>
+        <li>蒸留……液体を沸とうさせて気体にし、冷やして再び液体にもどすことで、沸点の差を利用して物質を分離する方法</li>
+        <li>具体例:焼酎・ウイスキーなどの蒸留酒づくり、石油の精製、海水からの真水づくり、香水づくり</li>
+        <li>突沸を防ぐため、枝つきフラスコには沸騰石を入れる</li>
+        <li>温度計の液だめは枝の付け根の高さに合わせる(出ていく気体の温度を測るため)</li>
+        <li>実験を終えるときは、火を消す前にガラス管を液体から抜く(逆流・フラスコ破損を防ぐ)</li>
+        <li>沸点の低い物質ほど先に気体になって出てくる(エタノールと水なら、はじめはエタノールが多い)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="stage challenge" data-ch-id="bu2-u5" data-target="#bu2-u5-quizbox">
+    <div class="stage-head">
+      <span class="stage-label minitest">✏️ ミニテスト ― 図の①・②にあてはまる器具の名前を答えよう</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="bu2-u5-quizbox">
+      <div class="lesson-fig">
+        <img src="jouryuutoi.png" alt="蒸留装置(①・②が空欄)">
+      </div>
+      <p>図の①の器具は<span class="kw-blank" data-a="枝つきフラスコ">枝つきフラスコ</span>という。図の②は<span class="kw-blank" data-a="沸騰石">沸騰石</span>で、急な沸とう(<span class="kw-blank" data-a="突沸">突沸</span>)を防ぐために入れる。</p>
+      <p>実験を終えるときは、火を消す前にガラス管を液体から抜く。これは<span class="kw-blank" data-a="逆流">逆流</span>を防ぐためである。</p>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="minitest-block">
+    <div class="mt-block-title">✏️ ミニテスト(全7問)</div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問1</span>蒸留による分離は、液体の何の差を利用したものか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:色の差</button>
+        <button class="q4-c" data-v="b">イ:におい</button>
+        <button class="q4-c" data-v="c">ウ:沸点の差</button>
+        <button class="q4-c" data-v="d">エ:密度の差</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ:沸点の差</strong>。沸点の低い物質ほど先に気体になって出てきます。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問2</span>実験を終了する前に、ガラス管を試験管の液体から取り出すのはどうしてか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:においを防ぐため</button>
+        <button class="q4-c" data-v="b">イ:逆流を防ぐため</button>
+        <button class="q4-c" data-v="c">ウ:色の変化を防ぐため</button>
+        <button class="q4-c" data-v="d">エ:蒸発を早めるため</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。先にガラス管を抜かないと、液体が逆流してフラスコが割れるおそれがあります。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問3</span>水とエタノールの混合物を加熱すると、80℃付近と100℃付近で2回沸とうする。最初の沸とうのとき、試験管にたまる液体はどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:水のみ</button>
+        <button class="q4-c" data-v="b">イ:少量の水が混ざったエタノール</button>
+        <button class="q4-c" data-v="c">ウ:少量のエタノールが混ざった水</button>
+        <button class="q4-c" data-v="d">エ:エタノールのみ</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。沸点の低いエタノールが先に多く出てくるため、はじめは水が少量混ざったエタノールになります。</div>
+    </div>
+
+    <div class="q4" data-correct="c">
+      <div class="q4-stem"><span class="q4-num">問4</span>試験管にたまった液体に食塩が混ざっているかどうかを調べるには、何を加えればよいか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:石灰水</button>
+        <button class="q4-c" data-v="b">イ:塩化コバルト紙</button>
+        <button class="q4-c" data-v="c">ウ:硝酸銀水溶液</button>
+        <button class="q4-c" data-v="d">エ:BTB溶液</button>
+      </div>
+      <div class="q4-exp">正解は<strong>ウ</strong>。硝酸銀水溶液を加えて塩化銀の白色の沈殿ができれば、食塩がふくまれています。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問5</span>蒸留の利用例として<strong>まちがっているもの</strong>はどれか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:醸造酒を蒸留して焼酎やウイスキーをつくる</button>
+        <button class="q4-c" data-v="b">イ:食塩水を熱して食塩の結晶をとり出す</button>
+        <button class="q4-c" data-v="c">ウ:原油を精製してガソリンや灯油に分ける</button>
+        <button class="q4-c" data-v="d">エ:海水を蒸留して真水をつくる</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。食塩水を熱して食塩の結晶をとり出す操作は蒸留ではありません(蒸留は沸点の差を利用して液体を分ける方法です)。ア・ウ・エはどれも蒸留の利用例です。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問6</span>枝つきフラスコに沸騰石を入れる理由は何か。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:液体の温度を上げやすくするため</button>
+        <button class="q4-c" data-v="b">イ:急な沸とう(突沸)を防ぐため</button>
+        <button class="q4-c" data-v="c">ウ:液体のにおいを消すため</button>
+        <button class="q4-c" data-v="d">エ:液体に色をつけるため</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。沸騰石は急激な沸とう(突沸)を防ぐために入れます。</div>
+    </div>
+
+    <div class="q4" data-correct="b">
+      <div class="q4-stem"><span class="q4-num">問7</span>温度計の液だめ(球部)を、枝つきフラスコの枝の付け根の高さに合わせるのはどうしてか。</div>
+      <div class="q4-choices">
+        <button class="q4-c" data-v="a">ア:フラスコの中の液体の温度を測るため</button>
+        <button class="q4-c" data-v="b">イ:フラスコから枝を通って出ていく気体(蒸気)の温度を正しく測るため</button>
+        <button class="q4-c" data-v="c">ウ:温度計が割れないようにするため</button>
+        <button class="q4-c" data-v="d">エ:沸騰石の温度を測るため</button>
+      </div>
+      <div class="q4-exp">正解は<strong>イ</strong>。液だめが液体の中に沈んでいると、液体そのものの温度を測ることになり、実際に出ていく気体(蒸気)の温度とずれてしまいます。</div>
+    </div>
+
+    <div class="mt-block-result"></div>
+    <div style="text-align:center;"><button class="mt-block-reset">↻ もう一度</button></div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-bu2-u5" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('bu2-u5')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
+  </div>
+</div>
+
+
+<!-- ================================================== -->
+<!--  単元末:次のアクション                              -->
+<!-- ================================================== -->
+<div class="next-actions">
+  <h3>🎉 すべての単元、おつかれさま!</h3>
+  <p>次は問題に挑戦しよう!順番にチャレンジするのがおすすめです。</p>
+  <div class="links">
+    <a href="bushitu2_practice.html">📝 練習問題へ</a>
+    <a href="bushitu2_check.html">📋 確認問題へ</a>
+  </div>
+</div>
+
+<nav class="pagenav">
+  <a href="bushitu1.html">
+    <span class="label">◀ BACK</span>
+    <span class="title">第1講 いろいろな物質</span>
+  </a>
+  <a href="bushitu2_practice.html" class="next">
+    <span class="label">NEXT ▶</span>
+    <span class="title">練習問題</span>
+  </a>
+</nav>
+
+</main>
+</div>
+
+<div class="pass-overlay" id="pass-overlay">
+  <div class="pass-dialog">
+    <div class="pass-emoji">🎉</div>
+    <h2>合 格!</h2>
+    <p>すべて正解!よくできました!</p>
+    <div class="pass-time" id="pass-time-display">0:00.0</div>
+    <p style="font-size:13px;color:#666;margin-top:6px;">ランキングに記録されました</p>
+    <div class="pass-actions">
+      <button class="btn outline" onclick="document.getElementById('pass-overlay').classList.remove('show')">閉じる</button>
+    </div>
+  </div>
+</div>
+
+<div class="fail-toast" id="fail-toast"></div>
+<div class="confetti" id="confetti"></div>
+
+<script src="app.js"></script>
+<script>
+// ミニテスト(4択・○×)は、1問正解するたびに花吹雪でお祝いし、満点クリア時はさらに大きくお祝いする
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.minitest-block').forEach(function(block){
+    block.addEventListener('click', function(e){
+      if(!(e.target.classList.contains('q4-c') || e.target.classList.contains('mt-c'))) return;
+
+      // クリックした選択肢が正解なら、その場で花吹雪
+      if(e.target.classList.contains('correct')){
+        if(typeof showConfetti === 'function') showConfetti();
+      }
+
+      setTimeout(function(){
+        if(block.dataset.celebrated === 'true') return;
+        var mtQs = block.querySelectorAll('.minitest');
+        var q4Qs = block.querySelectorAll('.q4');
+        var total = mtQs.length + q4Qs.length;
+        if(total === 0) return;
+        var answered = block.querySelectorAll('.minitest[data-answered="true"]').length
+                     + block.querySelectorAll('.q4[data-answered="true"]').length;
+        if(answered !== total) return;
+        var correct = 0;
+        mtQs.forEach(function(q){
+          var c = q.getAttribute('data-correct');
+          var sel = q.querySelector('.mt-c.selected');
+          if(sel && sel.getAttribute('data-v') === c) correct++;
+        });
+        q4Qs.forEach(function(q){
+          var c = q.getAttribute('data-correct');
+          var sel = q.querySelector('.q4-c.selected');
+          if(sel && sel.getAttribute('data-v') === c) correct++;
+        });
+        if(correct === total){
+          block.dataset.celebrated = 'true';
+          if(typeof showConfetti === 'function') showConfetti();
+        }
+      }, 60);
+    });
+    var resetBtn = block.querySelector('.mt-block-reset');
+    if(resetBtn){
+      resetBtn.addEventListener('click', function(){ block.dataset.celebrated = 'false'; });
+    }
+  });
+});
+</script>
+</body>
+</html>
