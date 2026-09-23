@@ -11,6 +11,9 @@
 .lesson-fig-cap{font-size:12.5px;color:#5D4037;margin-top:6px;}
 .info-note{background:#F0F9FF;border-left:4px solid #0284C7;border-radius:0 8px 8px 0;padding:12px 15px;margin:12px 0;font-size:14px;line-height:1.8;color:#0C4A6E;}
 .info-note .label{font-weight:bold;color:#0284C7;display:block;margin-bottom:4px;}
+
+.formula-btn{background:#fff;border:2px solid #FF8C42;color:#E67838;padding:6px 18px;border-radius:20px;cursor:pointer;font-weight:bold;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:.2s;margin:8px 0;}
+.formula-btn:hover{background:#FF8C42;color:#fff;}
 </style>
 </head>
 <body data-page="kitai1">
@@ -79,7 +82,7 @@
 
   <div class="stage challenge" data-ch-id="ka1-u1" data-target="#ka1-u1-quizbox">
     <div class="stage-head">
-      <span class="stage-label minitest">🧠 暗記テスト ― その他の性質を答えよう</span>
+      <span class="stage-label minitest">✏️ ミニテスト ― 図の①〜21にあてはまる語句を答えよう</span>
       <div class="stage-actions">
         <span class="challenge-timer" style="display:none;">0:00.0</span>
         <button class="ch-btn start">🎯 チャレンジ開始</button>
@@ -94,8 +97,16 @@
       <div class="lesson-fig">
         <img src="kitaiseisitu2.png" alt="気体の性質(①〜21が空欄)">
       </div>
-      <p>空気に最も多くふくまれる気体は<span class="kw-blank" data-a="窒素">窒素</span>で約80%、次に多いのは<span class="kw-blank" data-a="酸素">酸素</span>で約20%です。</p>
-      <p>酸素には他の物を<span class="kw-blank" data-a="燃やす">燃やす</span>性質があり、火のついた線香を入れると<span class="kw-blank" data-a="激しく燃える">激しく燃える</span>。水素は燃えると<span class="kw-blank" data-a="水">水</span>ができ、試験管に火を近づけると<span class="kw-blank" data-a="ポン">ポン</span>と音がして燃える。二酸化炭素は石灰水を<span class="kw-blank" data-a="白">白</span>色にごらせる。</p>
+
+      <p>空気より重いか軽いか:酸素は①<span class="kw-blank" data-a="少し重い">少し重い</span>、水素は②<span class="kw-blank" data-a="軽い">軽い</span>、二酸化炭素は③<span class="kw-blank" data-a="重い">重い</span>、アンモニアは④<span class="kw-blank" data-a="軽い">軽い</span>、窒素は⑤<span class="kw-blank" data-a="少し軽い">少し軽い</span>。</p>
+
+      <p>水に溶けやすいか:酸素は⑥<span class="kw-blank" data-a="溶けにくい">溶けにくい</span>、水素は⑦<span class="kw-blank" data-a="溶けにくい">溶けにくい</span>、二酸化炭素は⑧<span class="kw-blank" data-a="少し溶ける">少し溶ける</span>、アンモニアは⑨<span class="kw-blank" data-a="非常によく溶ける">非常によく溶ける</span>、窒素は⑩<span class="kw-blank" data-a="溶けにくい">溶けにくい</span>。</p>
+
+      <p>水溶液の性質:酸素は⑪<span class="kw-blank" data-a="中">中</span>性、水素は⑫<span class="kw-blank" data-a="中">中</span>性、二酸化炭素は⑬<span class="kw-blank" data-a="酸">酸</span>性、アンモニアは⑭<span class="kw-blank" data-a="アルカリ">アルカリ</span>性、窒素は⑮<span class="kw-blank" data-a="中">中</span>性。</p>
+
+      <p>におい:アンモニアだけ⑯<span class="kw-blank" data-a="刺激臭">刺激臭</span>がある。</p>
+
+      <p>その他の性質:酸素は他の物を⑰<span class="kw-blank" data-a="燃やす">燃やす</span>性質があり、火のついた線香を入れると⑳<span class="kw-blank" data-a="激しく燃える">激しく燃える</span>。水素は燃えると⑱<span class="kw-blank" data-a="水">水</span>ができ、試験管に火を近づけると21<span class="kw-blank" data-a="ポン">ポン</span>と音がして燃える。二酸化炭素は石灰水が⑲<span class="kw-blank" data-a="白色">白色</span>に濁る。</p>
     </div>
 
     <div class="word-bank-inline">
@@ -206,6 +217,10 @@
 
       <p><strong>下方置換法</strong>……水に<strong>とけやすく、空気より重い</strong>気体を集める方法。容器の下の方に気体がたまっていくので、口を上にしたびんの下から気体を導きます。【例】二酸化炭素</p>
 
+      <div style="text-align:center;">
+        <button class="formula-btn" onclick="showTermPopup('ガラス管の長さがちがうのはどうして?','水上置換法は<b>ガラス管が短くて</b>よく、上方置換法・下方置換法は<b>ガラス管をびんの奥まで</b>入れます。<br><br>水上置換法では、発生した気体は水よりも軽いので、水の中を<b>あわ</b>となって自然に浮き上がり、上に置いた集気びんに入っていきます。だからガラス管は水面近くまでで十分なのです。<br><br>上方置換法・下方置換法では、集気びんの中は最初<b>空気でいっぱい</b>です。ガラス管の先が浅いと、送りこんだ気体が入り口付近ですぐ外へ逃げてしまいます。そこで、ガラス管を<b>びんの奥まで</b>入れて、気体を奥からたまらせ、もとの空気を入り口側から押し出すようにします。')">💡 どうして?</button>
+      </div>
+
       <div class="info-note">
         <span class="label">💡 なぜこの方法を選ぶの?</span>
         水にとけやすい気体を水上置換法で集めようとすると、気体が水にとけてしまい、うまく集まりません。そこで、水にとけやすい気体は、密度(空気より重いか軽いか)によって上方置換法か下方置換法を選びます。<strong>二酸化炭素は密度が空気より大きいので空気より重く</strong>、<strong>アンモニアは密度が空気より小さいので空気より軽い</strong>ため、集め方が変わります。
@@ -239,7 +254,9 @@
       <div class="lesson-fig">
         <img src="kitaihosyuu2.png" alt="気体の捕集法(①〜⑫が空欄)">
       </div>
-      <p>水にとけ<span class="kw-blank" data-a="にくい">にくい</span>気体は<span class="kw-blank" data-a="水上置換法">水上置換法</span>で集める(例:酸素、水素)。水にとけ<span class="kw-blank" data-a="やすい">やすい</span>気体のうち、空気より<span class="kw-blank" data-a="軽い">軽い</span>気体は<span class="kw-blank" data-a="上方置換法">上方置換法</span>で集める(例:アンモニア)。水にとけやすい気体のうち、空気より<span class="kw-blank" data-a="重い">重い</span>気体は<span class="kw-blank" data-a="下方置換法">下方置換法</span>で集める(例:二酸化炭素)。</p>
+      <p>①<span class="kw-blank" data-a="水上置換">水上置換</span>法は、水にとけ②<span class="kw-blank" data-a="にくい">にくい</span>気体を集める方法である。例:③<span class="kw-blank" data-a="酸素">酸素</span>、④<span class="kw-blank" data-a="水素">水素</span>。</p>
+      <p>Ⓐ図の⑤<span class="kw-blank" data-a="上方置換">上方置換</span>法は、水にとけ⑥<span class="kw-blank" data-a="やすい">やすい</span>気体で、空気より⑦<span class="kw-blank" data-a="軽い">軽い</span>気体を集める方法である。例:⑧<span class="kw-blank" data-a="アンモニア">アンモニア</span>。</p>
+      <p>Ⓑ図の⑨<span class="kw-blank" data-a="下方置換">下方置換</span>法は、水にとけ⑩<span class="kw-blank" data-a="やすい">やすい</span>気体で、空気より⑪<span class="kw-blank" data-a="重い">重い</span>気体を集める方法である。例:⑫<span class="kw-blank" data-a="二酸化炭素">二酸化炭素</span>。</p>
     </div>
 
     <div class="word-bank-inline">
@@ -363,7 +380,7 @@
       <div class="lesson-fig">
         <img src="kitainoseihou2.png" alt="気体の製法(①〜⑫が空欄)">
       </div>
-      <p>装置の①の器具は<span class="kw-blank" data-a="滴下ろうと">滴下ろうと</span>という。酸素は<span class="kw-blank" data-a="過酸化水素水">過酸化水素水</span>(オキシドール)に<span class="kw-blank" data-a="二酸化マンガン">二酸化マンガン</span>を加えて発生させる。水素は<span class="kw-blank" data-a="塩酸">塩酸</span>に鉄・<span class="kw-blank" data-a="亜鉛">亜鉛</span>・マグネシウム・アルミニウムなどを加えて発生させる。二酸化炭素は塩酸に貝がらや卵の殻などの<span class="kw-blank" data-a="炭酸カルシウム">炭酸カルシウム</span>を加えて発生させる。アンモニアは<span class="kw-blank" data-a="塩化アンモニウム">塩化アンモニウム</span>と<span class="kw-blank" data-a="水酸化カルシウム">水酸化カルシウム</span>の粉末を混ぜて加熱して発生させる。</p>
+      <p>①<span class="kw-blank" data-a="滴下ろうと">滴下ろうと</span>という器具を使う。酸素は②<span class="kw-blank" data-a="過酸化水素水">過酸化水素水</span>(オキシドール)に③<span class="kw-blank" data-a="二酸化マンガン">二酸化マンガン</span>を加えて発生させる。水素は④<span class="kw-blank" data-a="塩酸">塩酸</span>に⑤<span class="kw-blank" data-a="鉄">鉄</span>・⑥<span class="kw-blank" data-a="亜鉛">亜鉛</span>・⑦<span class="kw-blank" data-a="マグネシウム">マグネシウム</span>・⑧<span class="kw-blank" data-a="アルミニウム">アルミニウム</span>などの金属を加えて発生させる。二酸化炭素は⑨<span class="kw-blank" data-a="塩酸">塩酸</span>に貝がらや卵の殻などの⑩<span class="kw-blank" data-a="炭酸カルシウム">炭酸カルシウム</span>を加えて発生させる。アンモニアは⑪<span class="kw-blank" data-a="塩化アンモニウム">塩化アンモニウム</span>と⑫<span class="kw-blank" data-a="水酸化カルシウム">水酸化カルシウム</span>の粉末を混ぜて加熱して発生させる。</p>
     </div>
 
     <div class="word-bank-inline">
@@ -442,6 +459,10 @@
     <div class="read-box">
       <p>アンモニアの性質を調べる実験に、「噴水実験」があります。手順は次の通りです。</p>
 
+      <div class="lesson-fig">
+        <img src="anmonia1.png" alt="アンモニアの生成(噴水実験)">
+      </div>
+
       <ol style="margin:6px 0 0;padding-left:20px;line-height:1.9;">
         <li>乾いた丸底フラスコに<strong>アンモニア</strong>を満たす。</li>
         <li>フェノールフタレイン溶液を数滴加えた水を入れたビーカーに、フラスコにつながるガラス管(スポイト)を差し込む。</li>
@@ -467,6 +488,39 @@
         <li>アンモニアが水にとけるとアルカリ性を示す → フェノールフタレインは赤色、BTB溶液は青色になる</li>
       </ul>
     </div>
+  </div>
+
+  <div class="stage challenge" data-ch-id="ka1-u4" data-target="#ka1-u4-quizbox">
+    <div class="stage-head">
+      <span class="stage-label minitest">🧠 暗記テスト ― 図の①〜⑤にあてはまる語句を答えよう</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="ka1-u4-quizbox">
+      <div class="lesson-fig">
+        <img src="anmonia2.png" alt="アンモニアの実験(①〜⑤が空欄)">
+      </div>
+      <p>乾いた①<span class="kw-blank" data-a="丸底">丸底</span>フラスコにアンモニアを入れる。水を入れたスポイトの水を丸底フラスコ内に入れる。アンモニアは水にとけ②<span class="kw-blank" data-a="やすい">やすい</span>ので、丸底フラスコ内の圧力が③<span class="kw-blank" data-a="下がる">下がる</span>。ビーカー内のフェノールフタレイン水が丸底フラスコ内にふきあがる。</p>
+      <p>アンモニアは水にとけると④<span class="kw-blank" data-a="アルカリ">アルカリ</span>性を示すので、フェノールフタレインは⑤<span class="kw-blank" data-a="赤">赤</span>色になり、⑤<span class="kw-blank" data-a="赤">赤</span>色の噴水がおこる。</p>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-ka1-u4" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('ka1-u4')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
   </div>
 
   <div class="minitest-block">
@@ -533,6 +587,10 @@
     <div class="read-box">
       <p>水溶液が酸性・中性・アルカリ性のどれであるかは、いくつかの指示薬の色の変化で調べることができます。</p>
 
+      <div class="lesson-fig">
+        <img src="sijiyaku1.png" alt="指示薬の色(リトマス液・BTB溶液・フェノールフタレイン)">
+      </div>
+
       <table class="tbl">
         <thead><tr><th></th><th>酸性</th><th>中性</th><th>アルカリ性</th></tr></thead>
         <tbody>
@@ -556,6 +614,40 @@
         <li>フェノールフタレイン:酸性・中性=無色、アルカリ性=赤色</li>
       </ul>
     </div>
+  </div>
+
+  <div class="stage challenge" data-ch-id="ka1-u5" data-target="#ka1-u5-quizbox">
+    <div class="stage-head">
+      <span class="stage-label minitest">🧠 暗記テスト ― 図の①〜⑩にあてはまる色を答えよう</span>
+      <div class="stage-actions">
+        <span class="challenge-timer" style="display:none;">0:00.0</span>
+        <button class="ch-btn start">🎯 チャレンジ開始</button>
+        <button class="ch-btn judge" style="display:none;">✓ 判定</button>
+        <button class="ch-btn example" style="display:none;">📖 手本</button>
+        <button class="ch-btn reset" style="display:none;">↻ リセット</button>
+        <button class="ch-btn cancel" style="display:none;">⏹ 中断</button>
+      </div>
+    </div>
+
+    <div class="read-box" id="ka1-u5-quizbox">
+      <div class="lesson-fig">
+        <img src="sijiyaku2.png" alt="指示薬の色(①〜⑩が空欄)">
+      </div>
+      <p>リトマス液は、酸性で①<span class="kw-blank" data-a="青">青</span>色から②<span class="kw-blank" data-a="赤">赤</span>色に変化し、アルカリ性で③<span class="kw-blank" data-a="赤">赤</span>色から④<span class="kw-blank" data-a="青">青</span>色に変化する。中性では変化しない。</p>
+      <p>BTB溶液は、酸性で⑤<span class="kw-blank" data-a="黄色">黄色</span>、中性で⑥<span class="kw-blank" data-a="緑色">緑色</span>、アルカリ性で⑦<span class="kw-blank" data-a="青色">青色</span>を示す。</p>
+      <p>フェノールフタレイン水溶液は、酸性で⑧<span class="kw-blank" data-a="無色">無色</span>、中性で⑨<span class="kw-blank" data-a="無色">無色</span>、アルカリ性で⑩<span class="kw-blank" data-a="赤色">赤色</span>を示す。</p>
+    </div>
+
+    <div class="word-bank-inline">
+      <div class="wb-title">📚 語群 ― タップして選び、空欄をタップ!</div>
+      <div class="wb-words"></div>
+    </div>
+  </div>
+
+  <div class="ranking">
+    <h3>🏆 ベストタイム</h3>
+    <ul id="ranking-ka1-u5" class="ranking-list"></ul>
+    <button class="btn outline" onclick="clearRanking('ka1-u5')" style="margin-top:6px;font-size:12px;padding:4px 12px;">記録をリセット</button>
   </div>
 
   <div class="minitest-block">
@@ -636,6 +728,11 @@
 </main>
 </div>
 
+<!-- 共通モーダル類 -->
+<div class="example-modal" id="example-modal" onclick="if(event.target===this) this.classList.remove('show')">
+  <div class="example-content" id="example-content"></div>
+</div>
+
 <div class="pass-overlay" id="pass-overlay">
   <div class="pass-dialog">
     <div class="pass-emoji">🎉</div>
@@ -652,6 +749,16 @@
 <div class="fail-toast" id="fail-toast"></div>
 <div class="confetti" id="confetti"></div>
 
+<script>
+function showTermPopup(title, html){
+  var content = document.getElementById('example-content');
+  if(!content) return;
+  content.innerHTML = '<h3>💡 ' + title + '</h3>'
+    + '<div style="font-size:14px;line-height:1.9;color:#2C3E50;">' + html + '</div>'
+    + '<button class="example-close" onclick="document.getElementById(\'example-modal\').classList.remove(\'show\')">閉じる</button>';
+  document.getElementById('example-modal').classList.add('show');
+}
+</script>
 <script src="app.js"></script>
 <script>
 // ミニテスト(4択・○×)は、1問正解するたびに花吹雪でお祝いし、満点クリア時はさらに大きくお祝いする
